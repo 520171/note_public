@@ -6,3 +6,6 @@
 >+ ## [分割线](https://github.com/520171/note/blob/master/Markdown/分割线.md)  
 >* ## [列表](https://github.com/520171/note/blob/master/Markdown/列表.md)  
 >* ## [区块](https://github.com/520171/note/blob/master/Markdown/区块.md)  
+$(document).ready(function () {
+    alert('RUNOOB');
+});
