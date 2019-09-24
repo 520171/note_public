@@ -1,4 +1,4 @@
-# 安装vue脚手架  
+# vue脚手架  
 >* ## vue-cli2  
 >   >* 安装脚手架2：npm i vue-cli -g  
 >   >* 创建vue脚手架2的项目：vue init webpack 项目名
