@@ -12,7 +12,7 @@
 >   >  -webkit-font-smoothing: antialiased;
 >   >  -moz-osx-font-smoothing: grayscale;
 >   >}
->   >// 添加
+>   >/*添加*/
 >   >[class^="el-icon-opd"], [class*=" el-icon-opd"]/*这里有空格*/
 >   >{
 >   >  font-family: "iconfont" !important;
