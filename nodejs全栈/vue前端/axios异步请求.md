@@ -6,6 +6,10 @@
 >* 使用axios实例发送异步post请求：``` instance.post(url, data) ```  
 >* axios的全局配置：``` instance.default.baseURL='' ... ```  
 >* 并发请求：``` instance.all([axios(config), axios(config)]).then(instance.spread((result1, result2) => {})).catch(err => {}) ```  
+>* 获取错误码和携带的数据
+>   >* 错误码：```err.response.status```  
+>   >* 携带的数据： ```err.response.data```  
+>   >   ![errorcode.png](https://github.com/520171/note/blob/master/nodejs全栈/imgs/errcode.png 'errcode')
 >* 请求拦截：一般用于给Header设置token,login页面除外  
 >   >```
 >   >instance.interceptors.request.use(config => {
