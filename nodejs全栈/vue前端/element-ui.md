@@ -7,3 +7,4 @@
 >   import ElementUI from 'element-ui'
 >   Vue.use(ElementUI)
 >   ```
+>* 在main.js中引入elementui的样式：```import 'element-ui/lib/theme-chalk/index.css'```  

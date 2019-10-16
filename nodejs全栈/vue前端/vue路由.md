@@ -21,3 +21,17 @@
 >   >       children: [], // 子路由对象数组  
 >   >   ```
 >   >* 导出vue-router实例：```export default router```  
+>* 前置路由守卫(用于路由跳转时检查token是否存在，存在则继续跳转，否则返回login)：
+>   >```
+>   >router.beforeEach((to, from, next) => {
+>   >  if ('/login' === to.path) {
+>   >    next()
+>   >  } else {
+>   >    if (localStorage.getItem('Authorization')) {
+>   >      next()
+>   >    } else {
+>   >      next('/login')
+>   >    }
+>   >  }
+>   >})
+>   >```

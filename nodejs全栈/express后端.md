@@ -5,3 +5,4 @@
 >* [jwt验证](https://github.com/520171/note/blob/master/nodejs全栈/express后端/jwt验证.md)
 >* [jwt验证](https://github.com/520171/note/blob/master/nodejs全栈/express后端/获取文件路径.md)
 >* [日志](https://github.com/520171/note/blob/master/nodejs全栈/express后端/日志.md)
+>* [mysql数据库](https://github.com/520171/note/blob/master/nodejs全栈/express后端/mysql.md)

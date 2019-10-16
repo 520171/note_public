@@ -34,7 +34,7 @@
 >   > }
 >   >
 >   > // 验证token
->   > const jwtAuth = expressJwt({
+>   > const analyzeToken = expressJwt({
 >   >   secret
 >   > }).unless({path: '/login'})
 >   > 

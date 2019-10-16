@@ -13,33 +13,30 @@
 >* 请求拦截：一般用于给Header设置token,login页面除外  
 >   >```
 >   >instance.interceptors.request.use(config => {
->   >   const pathname = config.pathname
->   >   if (localStorage.getItem('token')) {
->   >       if ('/' != pathname && '/login' != pathname) {
->   >           config.headers.common['token'] = localStorage.getItem('token')
->   >       }
+>   >       config.headers.authorization  = localStorage.getItem('Authorization')
 >   >   }
+>   >   // 数据加密
+>   >   config.data = { data: crypt.aesEncrypt(config.data) }
+>   >   console.log(config.data)
 >   >   return config
 >   >}, error => Promise.reject(error) )
 >   >```  
 >* 响应拦截：判断页面是否返回401，401一般表示未授权，401则返回登陆页面
 >   >```
->   >instance.interceptor.response.use(response => response, error => {
->   >   // 判断error.response 错误对象是否不为空
->   >   if (error.response) {
->   >       switch (err.response.status) {
->   >           case 401:
->   >               // 移除token
->   >               localStorage.removeItem('token')
->   >               // 回到登录页面
->   >               router.replace({
->   >                   path: '/login'
->   >               })
->   >           break;
->   >       }
->   >       // 返回错误信息
->   >       return Promise.reject(error.response.data)
->   >   }
+>   >instance.interceptors.response.use(response => {
+>   >   // 解密响应携带的payload数据
+>   >  response.data.payload = crypt.aesDecrypt(response.data.payload)
+>   >  return response
+>   >}, error => {
+>   >  if (error.response) {
+>   >    switch (error.response.status) {
+>   >      case 401:
+>   >        localStorage.removeItem('Authorization')
+>   >        router.replace('/login')
+>   >        break
+>   >    }
+>   >    return Promise.reject(error.response)
+>   >  }
 >   >})
 >   >```
 >* 可将vue-router对象传至axios封装的js文件中，实现401跳转  
