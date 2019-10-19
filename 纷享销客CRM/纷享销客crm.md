@@ -1,4 +1,4 @@
 # 纷享销客
-> 企业账号：后台管理界面的右上角出显示企```业账号： 679008```  
-> ![企业账号](https://github.com/520171/note/blob/master/纷享销客CRM/imgs/企业账号.png '企业账号')
->
+>+ ##[企业账号](https://github.com/520171/note/blob/master/纷享销客CRM/企业账号.md)  
+>+ ##[日志](https://github.com/520171/note/blob/master/纷享销客CRM/日志.md)  
+>+ ##[审批](https://github.com/520171/note/blob/master/纷享销客CRM/审批.md)  
