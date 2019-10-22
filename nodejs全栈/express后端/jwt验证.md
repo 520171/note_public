@@ -34,6 +34,7 @@
 >   > }
 >   >
 >   > // 验证token
+>   > // .unless的参数可以是function,当方法返回true则不需要token验证当前的请求。.unless({path: ['/login'...]}) || unless(function (req) {})
 >   > const analyzeToken = expressJwt({
 >   >   secret
 >   > }).unless({path: '/login'})
@@ -50,7 +51,7 @@
 >   >    
 >   > module.exports = {
 >   >   generatorToken,
->   >   jwtAuth,
+>   >   analyzeToken,
 >   >   handleErr
 >   > }
 >   > ```

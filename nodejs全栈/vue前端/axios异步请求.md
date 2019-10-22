@@ -13,8 +13,7 @@
 >* 请求拦截：一般用于给Header设置token,login页面除外  
 >   >```
 >   >instance.interceptors.request.use(config => {
->   >       config.headers.authorization  = localStorage.getItem('Authorization')
->   >   }
+>   >   config.headers.authorization  = localStorage.getItem('Authorization')
 >   >   // 数据加密
 >   >   config.data = { data: crypt.aesEncrypt(config.data) }
 >   >   console.log(config.data)
@@ -35,8 +34,12 @@
 >   >        router.replace('/login')
 >   >        break
 >   >    }
->   >    return Promise.reject(error.response)
+>   >    return Promise.reject(error)
 >   >  }
 >   >})
 >   >```
 >* 可将vue-router对象传至axios封装的js文件中，实现401跳转  
+>* axios的响应拦截的error必须return Promis.reject(error)：  
+>   * error的分类：error.response || error.request  
+>   * error.response表示服务端返回的错误  
+>   * error.request表示前端发起请求时触发的错误，如请求超时等  
