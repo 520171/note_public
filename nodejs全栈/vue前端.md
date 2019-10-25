@@ -11,3 +11,4 @@
 >* [使用element-ui](https://github.com/520171/note/blob/master/nodejs全栈/vue前端/element-ui.md)
 >* [客户端存放token](https://github.com/520171/note/blob/master/nodejs全栈/vue前端/storeToken.md)
 >* [压缩dist](https://github.com/520171/note/blob/master/nodejs全栈/vue前端/压缩dist.md)  
+>* [WebSocket](https://github.com/520171/note/blob/master/nodejs全栈/vue前端/WebSocket.md)  

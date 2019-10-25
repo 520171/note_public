@@ -33,7 +33,7 @@
 >   >   return jwt.sign(payload, secret, { expiresIn: 60 })
 >   > }
 >   >
->   > // 验证token
+>   > // 验证token,可通过unless排除需要验证的请求，unless可传入对象或方法  
 >   > // .unless的参数可以是function,当方法返回true则不需要token验证当前的请求。.unless({path: ['/login'...]}) || unless(function (req) {})
 >   > const analyzeToken = expressJwt({
 >   >   secret

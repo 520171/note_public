@@ -1,4 +1,4 @@
-#压缩dist
+# 压缩dist
 >* 不打包source map：
 >   * 在vue.config.js中添加：```module.exports = { productionSourceMap:false }```属性  
 >* 分离css
