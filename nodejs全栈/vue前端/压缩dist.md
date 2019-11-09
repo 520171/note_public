@@ -18,7 +18,7 @@
 >   }
 >   ```
 >* 压缩图片：
->   * npm安装```image-webpack-loader```模块 ```npm install image-webpack-loader --save-dev```  
+>   * npm安装```image-webpack-loader```模块 ```npm i image-webpack-loader --save-dev```  
 >   * vue.config.js下添加代码  
 >   ```
 >    // 压缩图片
