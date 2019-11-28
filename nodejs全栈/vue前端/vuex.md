@@ -28,5 +28,18 @@
 >   >   使用：this.$store.commit('setA', { xx=xxx })  
 >   >   // 通过commit方法调用mutations中的方法，第一个参数是mutations中的方法方法名，第二个参数是payload
 >   >   ```
->   >* actions属性，类似于mutations，actions是异步的，mutations是同步的  
+>   >* actions属性，类似于mutations，actions是异步的，mutations是同步的,一般用于提交mutations的方法  
+>   >   ```
+>   >   // 定义,异步使用
+>   >   actions = {
+>   >       funName ({commit, state}, payload) {
+>   >           return new Promise((resolve, reject) => {
+>   >               commit("mutationsFunName", payload)
+>   >               resolve(state.属性)
+>   >           })
+>   >       }
+>   >   }
+>   >   // 使用， 通过dispatch()方法使用
+>   >   this.$store.dispatch("funName", payload).then(res => {})
+>   >   ```
 
