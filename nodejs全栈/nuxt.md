@@ -1,5 +1,6 @@
 # nuxt.js---vue-ssr框架  
 ***
+>* [nuxt安装](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/nuxt安装.md)  
 >* [目录结构](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/nuxt项目的目录结构.md)  
 >* [路由](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/路由.md)  
 >* [中间件](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/中间件.md)  
