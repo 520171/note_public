@@ -10,3 +10,4 @@
 >* [使用插件](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/使用插件.md)  
 >* [注入](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/注入.md)  
 >* [vuex](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/vuex.md)  
+>* [修改默认端口](https://github.com/520171/note/blob/master/nodejs全栈/nuxt/修改默认端口.md)
