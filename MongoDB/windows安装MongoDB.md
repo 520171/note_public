@@ -7,4 +7,4 @@
 >   * 相应的位置创建mongodb.log文件和db目录  
 >   * 以管理员权限启动cmd  
 >   * 输入```mongod --dbpath "D:\mongodb\data\db" --logpath "D:\mongodb\log\mongodb.log" --install --serviceName "MongoDB" --logappend```  
->
+>   
