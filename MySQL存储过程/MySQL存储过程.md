@@ -7,3 +7,4 @@
 >* [存储过程](https://github.com/520171/note/blob/master/MySQL存储过程/存储过程.md)
 >* [存储过程](https://github.com/520171/note/blob/master/MySQL存储过程/存储过程.md)
 >* [定时器](https://github.com/520171/note/blob/master/MySQL存储过程/定时器.md)
+>* [分区](https://github.com/520171/note/blob/master/MySQL存储过程/分区.md)
