@@ -9,3 +9,4 @@
 >* [定时器](https://github.com/520171/note/blob/master/MySQL存储过程/定时器.md)
 >* [分区](https://github.com/520171/note/blob/master/MySQL存储过程/分区.md)
 >* [error](https://github.com/520171/note/blob/master/MySQL存储过程/error.md)
+>* [笔记](https://github.com/520171/note/blob/master/MySQL存储过程/笔记.md)
