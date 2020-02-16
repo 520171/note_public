@@ -7,4 +7,4 @@
 >* [文件操作](https://github.com/520171/note/blob/master/python/文件操作.md)
 >* [os模块](https://github.com/520171/note/blob/master/python/os模块.md)
 >* [异常](https://github.com/520171/note/blob/master/python/异常.md)
->* [列表推导式](https://github.com/520171/note/blob/master/python/列表推导式.md)
+>* [推导式](https://github.com/520171/note/blob/master/python/推导式.md)
