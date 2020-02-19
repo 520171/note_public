@@ -28,24 +28,22 @@
 >       def dir_copy(src, target):
 >           pass
 >           import os
+>           src_name = os.path.split(src)[1]
+>           target = os.path.join(target, src_name)
 >           if os.path.isdir(src):
 >               pass
->               src_name = os.path.split(src)[1]
->               target = os.path.join(target, src_name)
 >               os.mkdir(target)
 >               for i in os.listdir(src):
 >                   pass
->                   print(i)
->                   if os.path.isdir(os.path.join(src, i)):
->                       dir_copy(os.path.join(src, i), target)
->                   else:
+>                   dir_copy(os.path.join(src, i), target)
+>           else:
+>               pass
+>               with open(src, 'rb') as input_stream:
+>                   pass
+>                   data = input_stream.read()
+>                   with open(target, 'wb') as output_stream:
 >                       pass
->                       with open(os.path.join(src, i), 'rb') as input_stream:
->                           pass
->                           data = input_stream.read()
->                           with open(os.path.join(target, i), 'wb') as output_stream:
->                               pass
->                               output_stream.write(data)
+>                       output_stream.write(data)
 >       ```
 >* os的直接方法：
 >   * 获取当前工作区的目录：```os.getcwd() == os.path.dirname(__file__)```

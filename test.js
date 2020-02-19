@@ -1,4 +1,11 @@
-let i = 10
-let j = i
-j = 11
-console.log(i)
+function* abc() {
+  let i = 1
+  while(true){
+    console.log(yield i++)
+  }
+}
+num = abc()
+console.log(num.next())
+console.log(num.next())
+console.log(num.next())
+console.log(num.next(8))
