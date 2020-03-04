@@ -5,4 +5,4 @@
 >+ ## [MongoDB](https://github.com/520171/note/blob/master/MongoDB/MongoDB.md)  
 >+ ## [MySQL存储过程](https://github.com/520171/note/blob/master/MySQL存储过程/MySQL存储过程.md)  
 >+ ## [python](https://github.com/520171/note/blob/master/python/python.md)  
->+ ## [djiango](https://github.com/520171/note/blob/master/djiango/djiango.md)  
+>+ ## [django](https://github.com/520171/note/blob/master/django/django.md)  
