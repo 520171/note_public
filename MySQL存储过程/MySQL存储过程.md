@@ -10,5 +10,6 @@
 >* [分区](https://github.com/520171/note/blob/master/MySQL存储过程/分区.md)
 >* [error](https://github.com/520171/note/blob/master/MySQL存储过程/error.md)
 >* [笔记](https://github.com/520171/note/blob/master/MySQL存储过程/笔记.md)
+>* [常见问题](https://github.com/520171/note/blob/master/MySQL存储过程/常见问题.md)
 
 [返回教程首页](https://github.com/520171/note/blob/master/README.md)
