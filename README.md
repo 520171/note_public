@@ -7,3 +7,5 @@
 >+ ## [python](https://github.com/520171/note/blob/master/python/python.md)  
 >+ ## [django](https://github.com/520171/note/blob/master/django/django.md)  
 >+ ## [hyper-v](https://github.com/520171/note/blob/master/hyper-v/hyper-v.md)  
+>+ ## [网络安全](https://github.com/520171/note/blob/master/网络安全/网络安全.md)  
+>+ ## [typescript](https://github.com/520171/note/blob/master/typescript/typescript.md)  

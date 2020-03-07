@@ -61,3 +61,10 @@
 >               }]
 >           }
 >           ```
+>* 设置windows pm2项目开机自启：
+>   1. 安装windows自启包：```npm install -g pm2-windows-startup```
+>   2. 启动项目
+>   3. 将保存项目信息：```pm2 save```
+>   4. 将save的项目设置开机自启：```pm2-startup install```
+>
+>
