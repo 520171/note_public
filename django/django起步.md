@@ -36,7 +36,7 @@
 >           * views.py：视图函数，mtv中的
 >
 >
->* 配置模板（Templates）：
+>* <span id="temp">配置模板（Templates）：</span>
 >   * 在应用中配置模板：
 >       * 在应用根中创建模板目录并标记
 >       * 必须在项目的settings文件中的INSTALLED_APPS列表中注册该应用
