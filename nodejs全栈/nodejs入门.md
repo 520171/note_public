@@ -10,23 +10,32 @@
 >* 安装nodemon：```cnpm install nodemon -g```，使用nodemon指令代替node指令，实现保存自动编译
 >
 >
->* CommonJS规范（值的复制）：
->   * 引入模块：
->       1. ```const moduleName = require('模块名')```
->       2. ```const name = require('模块名').属性/方法```
->       3. ```const {a, b} = require('模块名')```，采用了结构赋值，将导出的模块对象按照属性名进行解构
->   * 导出模块：
->       1. ```module.exports = {属性, 方法}```
->       2. ```exports.属性/方法 = 值/function(){}/() => {}```
+>* 使用npm初始化nodejs项目：```npm init```
 >
 >
->* es6规范（值的引用）：
->   * 导出模块：
->       1. ```export let 变量名 = 值```
->       2. ```export {属性, 方法, ...}```
->       3. ```export default 属性名/方法名/{}```
->   * 导入模块：
->       1. ```import {属性名/方法名} from 模块名```，只针对export导出
->       2. ```import 自定义变量名 from '模块名'```，只针对export default导出
+>* node项目目录：
+>   * package.json（项目的配置文件）：
+>       ```
+>       {
+>           "name": "项目名",
+>           "version": "项目版本号",
+>           "description": "项目介绍",
+>           "main": 默认值为"index.js"，当你require("项目名")时会自动加载该属性指定的文件,
+>           "author": 作者名,
+>           "keywords": 关键字,
+>           "scripts": {
+>               "指令1": "内容",
+>               "指令2": "内容",
+>               "指令3": "内容"
+>           },
+>           "dependencies": {"模块名": "版本号"},
+>           "devDependencies": {"模块名": "版本号"},
+>           "comment_scripts": "scripts是一些自定义的指令，在控制台中通过npm run 执行",
+>           "comment_dependencies": "dependencies是项目生产环境模块依赖，当通过npm i -S安装模块时会添加"
+>           "comment_devDependencies": "devDependencies是项目开发环境模块依赖，当通过npm i -D安装模块时会添加"
+>       }
+>       ```
+>   * package-lock.json：记录项目所依赖的模块和模块所依赖的模块
+>   * node_modules目录：项目所有安装的模块都下载在该目录下
 >
 >
